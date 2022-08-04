@@ -6,7 +6,7 @@
 console.group("문제1");
 const year = 2022;
 let age = year - 1998 + 1;
-console.log(`나는 ${age}세 입니다.`);
+console.log("나는 %d세 입니다.", age);
 console.groupEnd();
 
 // 문제2: 자신의 나이를 의미하는 상수 age를 정의하고 이 값을 활용하여 자신이 태어난 년도 year를 전역 변수 형식으로 산출하여
@@ -15,7 +15,7 @@ console.groupEnd();
 console.group("문제2");
 const age = 25;
 var year = 2022 - age + 1;
-console.log(`나는 ${year}년도에 태어났습니다.`);
+console.log("나는 %d년도에 태어났습니다.", year);
 console.groupEnd();
 
 // 문제3: 사과를 바구니에 나누어 담으려고 한다. 하나의 바구니는 사과를 10개씩 담을 수 있으며 사과를 담다가 10개 미만으로 남는 경우 하나의 바구니를 추가로 사용해야 한다.
