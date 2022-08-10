@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>22.08.10 연습</title>
+	<style>
+		* {margin: 0; padding: 0; border: 0;}
+
+		ul li {list-style: none;}
+
+		#wrap {width: 1000px; height: 1040px; margin: auto;}
+
+		header {width: 1000px; height: 200px; background-color:lightseagreen; margin-bottom: 10px;}
+		header h1 {text-align: center;}
+
+		nav div {width: 200px; height: 100px; float: left; margin-bottom: 10px;}
+
+		#box01 {background-color: pink;}
+		#box02 {background-color: skyblue;}
+		#box03 {background-color: lavender;}
+		#box04 {background-color: khaki;}
+		#box05 {background-color: lightgreen;}
+
+		#main {width: 960px; height: 360px; background-color: bisque; clear: both; margin-bottom: 10px; padding: 20px;}
+
+		#banner {width: 960px; height: 160px; background-color: lightcoral; margin-bottom: 10px; padding: 20px;}
+
+		footer {width: 960px; height: 60px; background-color: lightslategrey; padding: 20px;}
+
+		#button {width: 50px; height: 30px; background-color: black; color: white;}
+	</style>
+</head>
+<body>
+	<form action="http://naver.com" method="get"></form>
+	<div id="wrap">
+		<header>
+			<h1>연습용 홈페이지</h1>
+		</header>
+		<nav>
+			<div id="box01"></div>
+			<div id="box02"></div>
+			<div id="box03"></div>
+			<div id="box04"></div>
+			<div id="box05"></div>
+		</nav>
+		<section id="main">
+			<fieldset>
+				<legend>1. 당신의 성별은?</legend>
+				<ul>
+					<li>
+						<input type="radio" id="user_gender" value="male" name="gender">
+						<label for="user_gender">남자</label>
+						<input type="radio" id="user_gender" value="female" name="gender">
+						<label for="user_gender">여자</label>
+						<input type="radio" id="user_gender" value="other" name="gender">
+						<label for="user_gender">그 외</label>
+					</li>
+				</ul>
+			</fieldset>
+			<fieldset>
+				<legend><br>2. 당신의 이름은?</legend>
+				<ul>
+					<li>
+						<label for="user_name"></label>
+						<input type="text" id="user_name" required>
+					</li>
+				</ul>
+			</fieldset>
+			<fieldset>
+				<legend><br>3. 당신의 연락처는?</legend>
+				<ul>
+					<li>
+						<label for="user_phone"></label>
+						<input type="tel" id="user_phone" required>
+					</li>
+				</ul>
+			</fieldset>
+			<fieldset>
+				<legend><br>4. 당신의 이메일은?</legend>
+				<ul>
+					<li>
+						<label for="user_email"></label>
+						<input type="email" id="user_email" required>
+					</li>
+				</ul>
+			</fieldset>
+			<fieldset>
+				<legend><br>5. 원하시는 상품 개수를 선택해주세요.</legend>
+				<ul>
+					<li>
+						<label for="user_number"></label>
+						<input type="number" id="user_number" required min="0" max="10">
+					</li>
+				</ul>
+			</fieldset>
+			<fieldset>
+				<legend><br>6. 주소를 입력해주세요.</legend>
+				<ul>
+					<li>
+						<label for="user_adress"></label>
+						<input type="text" id="user_adress" required>
+					</li>
+				</ul>
+			</fieldset>
+		</section>
+		<section id="banner">
+			<fieldset>
+				<legend>바라는 점을 적어주세요.</legend>
+				<textarea cols="30" rows="10"></textarea>
+			</fieldset>
+		</section>
+		<footer>
+			<fieldset>
+				<legend>다시 한 번 확인하신 후 제출해주세요.</legend>
+				<input type="submit" value="제출" id="button" >
+			</fieldset>
+		</footer>
+	</div>
+</body>
+</html>
