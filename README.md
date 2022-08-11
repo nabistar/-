@@ -1,1 +1,1 @@
-Javascript 연습 파일
+연습파일
