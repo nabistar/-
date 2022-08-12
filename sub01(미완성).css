@@ -1,0 +1,81 @@
+@charset "utf-8";
+
+* {margin: 0; padding: 0; border: 0;}
+
+a {text-decoration: none;}
+body {font-family: 'Nanum Gothic', sans-serif;
+	font-family: 'Noto Sans KR', sans-serif;}
+ul li {list-style: none;}
+
+header {width: 100%; height: 30px; background-color: #554c4b;}
+#head_top {width: 1000px; height: 30px; margin: auto;}
+#gnb {width: 150px; height: 30px; float: right; font-size: 10px; font-family: 'Nanum Gothic', sans-serif;}
+#gnb ul li {float: left;}
+#gnb ul li:first-child {border-right: 1px solid #494140; padding-right: 10px; margin-right: 10px;}
+#gnb ul li a {color: #b3a8a6;}
+
+nav {width: 100%; height: 80px; border-bottom: 1px solid #d9d9d9; }
+#nav_wrap {width: 1000px; height: 80px; margin: auto;}
+#nav01 {width: 141px; height: 60px; float: left; margin-right: 109px; padding-top: 20px;}
+#nav02 {width: 750px; height: 80px; float: left;}
+#nav02 ul li {float: left; padding-top: 20px; font-size: 14px; margin-right:50px; letter-spacing: 1px; font-weight: 40px;}
+#nav02 ul li:last-child {margin-right: 0;}
+#nav02 ul li a {color:gray;}
+
+section {width: 100%; height: 1543px; background: url(../10일차/img/sub_top_bg.jpg) no-repeat top;}
+#main_wrap {width: 1000px; height: 1543px; margin: auto;}
+
+#main_left {width: 220px; height: 1543px; background-color: bisque; float: left; border-left: 1px solid gray; border-right: 1px solid gray; box-sizing: border-box;}
+#main_left_01 {width: 218px; height: 219px; background-color: #fa8498; color: white; padding: 70px 0 0 30px; box-sizing: border-box;}
+#main_left ul li {width: 218px; height: 54px; border-bottom: 1px solid #eee; line-height: 54px;}
+#main_left ul li a {width: 100%; height: 100%; display: block; padding-left: 30px; box-sizing: border-box; color: #555;}
+#main_left ul li a:hover {background: #efefef; color: #333; position: relative;}
+#main_left ul li a:hover::after {content: ">"; color: #fa8468; position: absolute; right: 20px;}
+
+
+#main_right {width: 740px; height: 1543px; float: right;}
+#main_right_01 {width: 740px; height: 219px; float: left; padding-top: 26px; box-sizing: border-box; background: url(../10일차/img/top_img.png) no-repeat right 40px bottom;}
+#path {font-size: 12px; color: #ccc;}
+#path span {color: #888; margin: 0 10px;}
+#path span:first-child {margin-left: 0;}
+#main_right_01 h2 {font-size: 36px; font-weight: normal; color: #fa8468; margin: 45px 0 15px;}
+#main_right_01 p {font-size: 12px; color: #555;}
+
+#main_right_02 {width: 740px; height: 349px; background: url(../10일차/img/aboutbr_bg.jpg) no-repeat right bottom; float: left; font-size: 14px; color: #555; padding-top: 40px; margin-bottom: 14px;}
+#main_right_02::before {content: ""; display: block; width: 24px; height: 4px; background-color: #30b896; margin-bottom: 5px;}
+#main_right_02 h3 {font-size: 38px; color: #30b896;}
+#main_right_02 h4 {font-size: 22px; color: #999; margin: 20px 0;}
+
+.right_sub {width: 244px; height: 40px; background-color: #cacaca; float: left;}
+#main_right_04 {margin: 0 4px 0;}
+#main_right_03 {margin-right: 0;}
+.right_sub a {width: 100%; height: 100%; display: block; color:#fff; font-weight: bold; text-align: center; line-height: 40px;}
+
+#main_right_sub {width: 740px; height: 711px; background-color: black;float: left;}
+#main_right_sub01 {width: 289px; height: 254px; background-color: lightpink; float: left; margin: 44px 2px 0 0;}
+#main_right_sub02 {width: 449px; height: 254px; background-color: lightsalmon; float: left; margin-top: 44px;}
+#main_right_sub03 {width: 738px; height: 134px; background-color: lightseagreen; float: left; margin:0 1px 0;}
+#main_right_sub04 {width: 339px; height: 279px; background-color: lightskyblue; float: left; margin-right: 51px;}
+#main_right_sub05 {width: 350px; height: 279px; background-color: limegreen; float: left;}
+#main_right_sub06 {width: 740px; height: 40px; background-color: violet; float: left; margin-top: 40px;}
+#main_right_sub07 {width: 184px; height: 40px; background-color: lavender; margin: auto;}
+
+#quick {width: 116px; height: 584px; position: absolute; left: 50%; top: 150px; margin-left: 515px;}
+
+footer {width: 100%; height: 147px; border-top: 1px solid #ccc;}
+#footer_wrap {width: 1000px; height: 117px; margin: auto; padding-top: 20px;}
+#footer01 {width: 200px; height: 117px; float: left; text-align: right;}
+#footer02 {width: 750px; height: 117px; float: right;}
+#fnb ul li {float: left; padding-right: 10px; border-right: 1px solid #ccc; margin-right: 10px;}
+#fnb ul li a {color: #555;}
+#fnb ul li:last-child {border: 0;}
+#fnb ul li:nth-child(3), #fnb ul li:nth-child(4) {font-weight: bold;}
+#fnb::after {content:""; display: block; clear: both;}
+/* 
+::after / ::before 가상선택자(전후문자선택자)
+선택자의 앞이나 뒤에 가상의 요소를 만들어 자식요소로 끼워넣어줌.
+content 속성을 사용할 수 있음.(다른 선택자에서는 사용 불가)
+*/
+#company_info {margin: 10px 0 15px; line-height: 1.5;}
+#company_info span {margin-right: 20px; font-size: 13px; color: #555;}
+#copy {font-size: 12px; color: #888;}
