@@ -1,0 +1,23 @@
+@charset "utf-8";
+
+@import "../reset.css";
+
+#wrap {width: 800px; height: 800px; background-color: gray; margin: auto; position: relative;}
+
+#right {width: 600px; height: 640px; background-color: lightpink; }
+#right_1 {width: 400px; height: 640px; background-color: darkred; float: left; }
+#right01 {width: 400px; height: 320px; background-color: gold; float: left;}
+#right02 {width: 200px; height: 320px; background-color: darkblue; float: left;}
+#right03 {width: 200px; height: 160px; background-color: black; float: left; }
+#right04 {width: 200px; height: 160px; background-color: white; float: left;}
+
+#right_2 {width: 200px; height: 640px; background-color: darkorange; float: right;}
+
+#left {width: 200px; height: 640px; background-color: darkviolet; position: absolute; right: 0; top: 0;}
+#left01 {width: 200px; height: 480px; background-color: lightgreen; }
+#left02 {width: 200px; height: 160px; background-color: skyblue;}
+
+#footer {width: 800px; height: 160px; background-color: lawngreen; display: flex; }
+#footer01 {width: 200px; height: 160px; background-color: lightcoral; }
+#footer02 {width: 400px; height: 160px; background-color: gold; }
+#footer03 {width: 200px; height: 160px; background-color: lavender; }
